@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About – Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+
+  <main class="about">
+
+    
+
+      <h2>How to Reach Me</h2>
+     <p id="email-line">You have a good chance of finding me at any given coffee shop in Philadelphia on any given day. More reliably, 
+        you can reach me by email at <span id="email"></span>.</p>
+
+<noscript>
+  <p>You have a good chance of finding me at any given coffee shop in Philadelphia on any given day. More reliably, 
+    you can reach me by email at juliangould1300 [at] gmail [dot] com.</p>
+</noscript>
+
+<script>
+  // --- CONFIGURE YOUR ADDRESS HERE ---
+  const parts = ["juliangould1300", "gmail", "com"]; // [local, domain, tld]
+  // -----------------------------------
+
+  const email = `${parts[0]}@${parts[1]}.${parts[2]}`;
+  const link = document.createElement("a");
+  link.href = `mailto:${email}`;
+  link.textContent = email;
+
+  document.getElementById("email").appendChild(link);
+</script>
+
+  </div>
+
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../scripts/include.js"></script>
+</body>
+</html>

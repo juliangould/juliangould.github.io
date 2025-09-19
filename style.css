@@ -1,0 +1,416 @@
+.logo-with-name {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-icon {
+  width: 36px;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: sans-serif;
+  background: #fdfdfd;
+  color: #222;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #555;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+h1, h2 {
+  color: #111;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* Centered landing section */
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.blurb {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: 1.2rem auto 0;
+  line-height: 1.6;
+}
+
+.featured {
+  width: 100%;
+}
+
+.featured h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #222;
+}
+
+.feature-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.feature-list li {
+  margin: 1.5rem 0;
+  line-height: 1.5;
+}
+
+.feature-list a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+.feature-list a:hover {
+  text-decoration: underline;
+}
+
+
+/* Prevent visited link color on your name/logo */
+header a:link,
+header a:visited {
+  color: #111;        /* or any color you prefer */
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;  /* optional */
+  color: #007acc;              /* optional hover color */
+}
+
+
+/* Layout for header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.site-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.site-name a:link,
+.site-name a:visited {
+  color: #111;
+  text-decoration: none;
+}
+
+.site-name a:hover {
+  color: #007acc;
+  text-decoration: underline;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  color: #007acc;
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .site-nav {
+    margin-top: 0.5rem;
+  }
+}
+
+
+.talk {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.talk h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.talk .context {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.talk .description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.talk .links a {
+  font-size: 0.9rem;
+  color: #007acc;
+  text-decoration: none;
+}
+
+.talk .links a:hover {
+  text-decoration: underline;
+}
+
+.project {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.project h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #222;
+}
+
+.project .description {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project .links a {
+  color: #007acc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.project .links a:hover {
+  text-decoration: underline;
+}
+
+
+.writing {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.writing h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #222;
+}
+
+.writing .description {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.writing .links a {
+  color: #007acc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.writing .links a:hover {
+  text-decoration: underline;
+}
+
+.writing .authors {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.2rem 0 0.4rem;
+}
+
+
+.paper {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.paper h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.paper .authors {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.paper .venue {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+.paper .description {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.paper .links a {
+  font-size: 0.9rem;
+  color: #007acc;
+  text-decoration: none;
+}
+
+.paper .links a:hover {
+  text-decoration: underline;
+}
+
+
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  line-height: 1.7;
+}
+
+.bio-section {
+  margin-top: 2rem;
+}
+
+.bio-section h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.about-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.about-portrait {
+  max-width: 160px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 2rem;
+}
+
+.about-portrait-grid {
+  width: 160px;
+  border-radius: 50%;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-align: center;
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.landing-nav a {
+  display: inline-block;
+  margin: 0.4rem 0.7rem;
+  padding: 0.4rem 0.9rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.landing-nav a:hover {
+  background: #f3f3f3;
+}
+
+.landing-portrait {
+  width: 130px;
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+  margin-top: 0.2rem; /* adjust as needed */
+}
