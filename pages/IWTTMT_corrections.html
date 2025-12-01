@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+
+  <!-- Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- MathJax config: tells it what delimiters to look for -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }   // or "chtml" if you prefer HTML output
+    };
+  </script>
+  <!-- MathJax itself -->
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<body>
+  <div id="content">Loading...</div>
+
+  <script>
+    fetch("../files/md_pages/IWTTMT_corrections.md")
+      .then(response => response.text())
+      .then(markdown => {
+        // 1. Markdown → HTML
+        const html = marked.parse(markdown);
+        document.getElementById("content").innerHTML = html;
+
+        // 2. Ask MathJax to render any LaTeX in the new HTML
+        if (window.MathJax) {
+          MathJax.typesetPromise();
+        }
+      });
+  </script>
+</body>
+</html>
