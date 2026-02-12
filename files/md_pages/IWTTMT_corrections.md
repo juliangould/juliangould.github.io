@@ -14,7 +14,7 @@
 ## Chapter 6: Approximation by polynomials
 
 ### Section 6.5: Is there a useable polynomial approximation method?
-* (Page 135) The non-analytic function $\psi(x)$ is defined by $\psi(x) = e^{-1/x} \cdot \mathbf{1}_{x > 0}$, not $\psi(x) = e^{-x} \cdot \mathbf{1}_{x > 0}$ as written.
+* (Page 135) The non-analytic function $\psi(x)$ is defined by $\psi(x) = e^{-1/x} \cdot 1_{x > 0}$, not $\psi(x) = e^{-x} \cdot 1_{x > 0}$ as written.
 
 ## Chapter 7: Public-key cryptography
 
