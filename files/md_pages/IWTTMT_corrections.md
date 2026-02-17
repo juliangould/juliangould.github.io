@@ -22,6 +22,9 @@
 * (Page 155) In the caption of figure 7.2, we have described a Cook reduction of B to A, not A to B as written. If an efficient algorithm for A can be used to build an efficient algorithm for B, we have reduced B to A. 
 
 
+## Chapter 11: Scissors congruence
+### Section 11.5: The Dehn invariant
+* (Page 286, line 8) This line of equational reasoning should be using $D_f$ everywhere instead of $F$. In particular, we should arrive at the conclustion that $D_f(Q_1) + D_f(Q_2) = D_f(P)$. 
 
 
 # Typographical Errors:
@@ -55,6 +58,7 @@
 
 ## Chapter 10: Ultrafilters
 * (Page 251, line 19) undergraduate mathematics $\to$ undergraduate mathematics curriculum.
+* (Page 280, line -17) delete space at beginning of line.
 
 ## Chapter 11: Scissors congruence
 * (Page 282, line 19) easier visualize $\to$ easier to visualize.
